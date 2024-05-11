@@ -1,0 +1,64 @@
+header {
+    border-color: black;
+    background-color:grey; 
+    padding: 2px;
+}
+
+header h2 {
+    text-align: right;
+    padding-right: 10px;
+}
+
+section {
+    position: relative;
+    display: block;
+    font-size: 22px;
+}
+
+section h2 {
+    font-family: Brush Script MT;
+    color: grey;
+    font-weight: 500;
+    font-size: 56px;
+    position: absolute;
+    padding-left: 20px
+}
+
+section h3 { 
+    text-align: left;
+    font-family: Brush Script MT;
+    color: grey;
+}
+
+section h4 {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: lightgray;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    position: relative;
+    bottom: 234px;
+}
+
+.thoughts {
+    position: relative;
+    left: 796px;
+    bottom: 603px;
+}
+
+h3 {
+    position: relative;
+    left: 810px;
+    bottom: 533px;
+}
+
+h4 {
+    position: relative;
+    left: 475px;
+    bottom: 377px; 
+    color: grey;
+}
