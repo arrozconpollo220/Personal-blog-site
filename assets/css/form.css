@@ -1,0 +1,23 @@
+header {
+    background-color:grey; 
+    padding: 0px;
+    margin: -8px;
+    position: relative;
+    bottom: 10px;
+}
+
+header h2 {
+    text-align: right;
+    padding-right: 10px;
+}
+
+footer {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: lightgray;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    top: 764px;
+
+}
