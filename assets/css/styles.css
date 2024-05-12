@@ -34,16 +34,6 @@ section h4 {
     text-align: center;
 }
 
-footer {
-    text-align: center;
-    color: white;
-    background-color: lightgray;
-    padding-bottom: 3px;
-    padding-top: 3px;
-    position: relative;
-    bottom: 234px;
-}
-
 .thoughts {
     position: relative;
     left: 796px;
@@ -52,8 +42,8 @@ footer {
 
 h3 {
     position: relative;
-    left: 810px;
-    bottom: 533px;
+    left: 703px;
+    bottom: 538px;
 }
 
 h4 {
@@ -61,4 +51,14 @@ h4 {
     left: 475px;
     bottom: 377px; 
     color: grey;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: lightgray;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    position: relative;
+    bottom: 0px;
 }
