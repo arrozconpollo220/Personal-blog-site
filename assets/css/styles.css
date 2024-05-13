@@ -2,9 +2,7 @@ header {
     border-color: black;
     background-color:grey; 
     padding: 2px;
-}
-
-header h2 {
+    height: 70px;
     text-align: right;
     padding-right: 10px;
 }
@@ -35,25 +33,40 @@ section h4 {
 }
 
 .thoughts {
+    width: 45%;
     position: relative;
-    left: 796px;
+    left: 610px;
     bottom: 603px;
 }
 
-h3 {
-    position: relative;
-    left: 703px;
-    bottom: 538px;
-}
+.container [type=text] {
+    padding: 12px 20px;
+    margin: 13px 0;
+    display: inline-block;  
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
 
-h4 {
+.container {
     position: relative;
-    left: 475px;
-    bottom: 377px; 
+    left: 630px;
+    bottom: 622px;
+    width: 0px;
+    font-family: Brush Script MT;
     color: grey;
 }
 
-footer {
+.button {
+    position: relative;
+    border: 2px solid black;
+    width: 10%;
+    left: 1085px;
+    bottom: 644px;
+    color: grey;
+    height: 20px;                                                                                                                                                                                                                                                                                               
+}
+
+footer {                                                                                                                                                                                                                                                                                                                                                                  
     text-align: center;
     color: white;
     background-color: lightgray;

@@ -7,8 +7,9 @@
 <link rel="Stylesheet" type="Text/css" href="./assets/css/styles.css">
 </head>
 
-<header id= "Mode" class="light/dark">
-    <h2>Light Mode/Dark Mode</h2>
+<header>
+<button id= "mode" class="light/dark">
+    <b>Light Mode/Dark Mode</b></button>
 </header>
 
 <body style="margin: 0px; height: 100%; background-color: white;">
@@ -16,12 +17,20 @@
     <h2  id="blog" class="blog">My Personal Blog</h2>
     <img src="./assets/Images/20240509_165015.jpg" alt="Journal and pen" width="600" height="600" class="left align">
     <h2 class="thoughts">My Thoughts for the Day...</h2>
-    <h3 class="username">Username:</h3>
-    <h3 class="title">Title:</h3>
-    <h3 class="content">Content:</h3>
-    <h4 class="button">Submit</h4>
+
+    <div class="container" col>
+    <label for="username"><b>Username:</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="title"><b>Title:</b></label>
+    <input type="text" placeholder="title" name="title" required>
+
+    <b>My Thoughts:</b><textarea for="content" name="content" rows="10" cols="75" type="text" placeholder="content" required></textarea>
+    </div>
+
+    <button id="button" class="button" ><b>Submit</b></button>
     </section>
-    
+
 <footer>
     <p>This website was created by arrozconpollo220</p>
 </footer>
