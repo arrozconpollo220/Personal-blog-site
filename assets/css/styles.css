@@ -1,3 +1,13 @@
+body {
+    background-color: white;
+    color: grey;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
 header {
     border-color: black;
     background-color:grey; 
@@ -60,7 +70,7 @@ section h4 {
     position: relative;
     border: 2px solid black;
     width: 10%;
-    left: 1085px;
+    left: 1050px;
     bottom: 644px;
     color: grey;
     height: 20px;                                                                                                                                                                                                                                                                                               
