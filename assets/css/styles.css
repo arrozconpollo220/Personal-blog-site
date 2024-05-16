@@ -66,16 +66,6 @@ section h4 {
     color: grey;
 }
 
-.button {
-    position: relative;
-    border: 2px solid black;
-    width: 10%;
-    left: 1050px;
-    bottom: 644px;
-    color: grey;
-    height: 20px;                                                                                                                                                                                                                                                                                               
-}
-
 footer {                                                                                                                                                                                                                                                                                                                                                                  
     text-align: center;
     color: white;
