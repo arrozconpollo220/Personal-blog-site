@@ -16,22 +16,34 @@ modeButton.addEventListener("click", function () {
 window.localStorage.getItem("saved-thoughts");
 console.log(JSON.parse(window.localStorage.getItem('saved-thoughts')));
 
-const usernameFromLocalStorage = localStorage.getItem('username')
+// Display saved thoughts
+const savedThoughts = JSON.parse(window.localStorage.getItem("saved-thoughts"));
+const section = document.querySelector("section");
+
+if (savedThoughts) {
+  savedThoughts.forEach((thought) => {
+    const thoughtContainer = document.createElement("div");
+    thoughtContainer.classList.add("thought-container");
+
+    const usernameElement = document.createElement("h3");
+    usernameElement.textContent = `Username: ${thought.username}`;
+    thoughtContainer.appendChild(usernameElement);
+    const titleElement = document.createElement("h4");
+    titleElement.textContent = `Title: ${thought.title}`;
+    thoughtContainer.appendChild(titleElement);
+
+    const thoughtElement = document.createElement("p");
+    thoughtElement.textContent = `Thought: ${thought.thought}`;
+    thoughtContainer.appendChild(thoughtElement);
+
+    section.appendChild(thoughtContainer);
+  });
+}
+
+const usernameFromLocalStorage = localStorage.getItem("username");
 
 if (usernameFromLocalStorage) {
-    const userName = JSON.parse(usernameFromLocalStorage)
-    userName.textContent
+  const userName = JSON.parse(usernameFromLocalStorage);
+  userName.textContent;
 }
- 
-// const usernameFromLocalStorage = localStorage.getItem("username");
-// console.log(usernameFromLocalStorage);
-
-// const titleFromLocalStorage = localStorage.getItem("title");
-// console.log(titleFromLocalStorage);
-
-// const thoughtFromLocalStorage = localStorage.getItem("thought");
-// console.log(thoughtFromLocalStorage);
-
-
-
 
