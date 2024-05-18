@@ -12,3 +12,26 @@ modeButton.addEventListener("click", function () {
         modeButton.textContent = "Light Mode";
     }
 });
+
+window.localStorage.getItem("saved-thoughts");
+console.log(JSON.parse(window.localStorage.getItem('saved-thoughts')));
+
+const usernameFromLocalStorage = localStorage.getItem('username')
+
+if (usernameFromLocalStorage) {
+    const userName = JSON.parse(usernameFromLocalStorage)
+    userName.textContent
+}
+ 
+// const usernameFromLocalStorage = localStorage.getItem("username");
+// console.log(usernameFromLocalStorage);
+
+// const titleFromLocalStorage = localStorage.getItem("title");
+// console.log(titleFromLocalStorage);
+
+// const thoughtFromLocalStorage = localStorage.getItem("thought");
+// console.log(thoughtFromLocalStorage);
+
+
+
+

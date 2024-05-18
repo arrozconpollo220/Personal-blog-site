@@ -46,3 +46,4 @@ var formEl = document.getElementById("thought-form")
 formEl.addEventListener("submit", handleThoughtFormSubmit)
 console.log(formEl)
 initiateLocalStorageIfNotThere()
+
