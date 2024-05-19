@@ -1,3 +1,4 @@
+//light mode dark mode
 const modeButton = document.getElementById("mode");
 
 const body = document.getElementById("body");

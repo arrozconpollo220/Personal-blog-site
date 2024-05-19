@@ -1,3 +1,4 @@
+// light mode dark mode
 const modeButton = document.getElementById("mode");
 
 const body = document.getElementById("body");
@@ -13,6 +14,7 @@ modeButton.addEventListener("click", function () {
     }
 });
 
+// local storage
 function handleThoughtFormSubmit(event){
     event.preventDefault()
     console.log("FORM SUBMITTED!!!!")
@@ -42,8 +44,14 @@ function initiateLocalStorageIfNotThere(){
     localStorage.setItem("saved-thoughts", JSON.stringify([]))
 }
 
-var formEl = document.getElementById("thought-form")
-formEl.addEventListener("submit", handleThoughtFormSubmit)
-console.log(formEl)
-initiateLocalStorageIfNotThere()
+var formEl = document.getElementById("thought-form");
+formEl.addEventListener("submit", handleThoughtFormSubmit);
+console.log(formEl);
+initiateLocalStorageIfNotThere();
+
+function handleThoughtFormSubmit(event) {
+  event.preventDefault(); 
+  window.location.href = "blog.html";
+  formEl.reset();
+}
 
