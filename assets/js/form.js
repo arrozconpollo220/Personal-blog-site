@@ -14,10 +14,10 @@ modeButton.addEventListener("click", function () {
     }
 });
 
+// Display saved thoughts. Pull data from local storage string and display
 window.localStorage.getItem("saved-thoughts");
 console.log(JSON.parse(window.localStorage.getItem('saved-thoughts')));
 
-// Display saved thoughts. Pull data from local storage string and display
 const savedThoughts = JSON.parse(window.localStorage.getItem("saved-thoughts"));
 const section = document.querySelector("section");
 

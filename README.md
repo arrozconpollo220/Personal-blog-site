@@ -22,3 +22,8 @@ https://arrozconpollo220.github.io/Personal-blog-site/
 https://github.com/arrozconpollo220/Personal-blog-site
 
 ## Screenshots of the site
+https://github.com/arrozconpollo220/Personal-blog-site/blob/main/Recording%20of%20Pesonal%20Blog%20Site.mp4
+https://github.com/arrozconpollo220/Personal-blog-site/blob/main/Personal%20Blog%20Site%20Screenshot%201.png
+https://github.com/arrozconpollo220/Personal-blog-site/blob/main/Personal%20Blog%20Site%20Screenshot%202.png
+https://github.com/arrozconpollo220/Personal-blog-site/blob/main/Personal%20Blog%20Site%20Screenshot%203.png
+https://github.com/arrozconpollo220/Personal-blog-site/blob/main/Personal%20Blog%20Site%20Screenshot%204.png
