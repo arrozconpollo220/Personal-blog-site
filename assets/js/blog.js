@@ -26,6 +26,8 @@ function handleThoughtFormSubmit(event){
     var newThought = {username: usernameInputEl, title: titleInputEl, thought: thoughtInputEl}
     saveToStorage(newThought)
 
+    window.location.href = "blog.html";
+    formEl.reset();
 }
 
 function saveToStorage(newItem){
@@ -47,11 +49,5 @@ function initiateLocalStorageIfNotThere(){
 var formEl = document.getElementById("thought-form");
 formEl.addEventListener("submit", handleThoughtFormSubmit);
 console.log(formEl);
-initiateLocalStorageIfNotThere();
-
-function handleThoughtFormSubmit(event) {
-  event.preventDefault(); 
-  window.location.href = "blog.html";
-  formEl.reset();
-}
+initiateLocalStorageIfNotThere()
 
