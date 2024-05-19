@@ -72,7 +72,6 @@ formEl.addEventListener("submit", handleThoughtFormSubmit);
 console.log(formEl);
 initiateLocalStorageIfNotThere();
 
-// local storage
 function handleThoughtFormSubmit(event){
     event.preventDefault()
     console.log("FORM SUBMITTED!!!!")
