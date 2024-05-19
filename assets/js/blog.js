@@ -14,21 +14,42 @@ modeButton.addEventListener("click", function () {
     }
 });
 
-// local storage
-function handleThoughtFormSubmit(event){
-    event.preventDefault()
-    console.log("FORM SUBMITTED!!!!")
-    var usernameInputEl = document.getElementById("username-input").value.trim();
-    console.log(usernameInputEl)
-    var titleInputEl = document.getElementById("title-input").value.trim();
-    var thoughtInputEl = document.getElementById("thought-input").value.trim();
+// // local storage
+// function handleThoughtFormSubmit(event){
+//     event.preventDefault()
+//     console.log("FORM SUBMITTED!!!!")
+//     var usernameInputEl = document.getElementById("username-input").value.trim();
+//     console.log(usernameInputEl)
+//     var titleInputEl = document.getElementById("title-input").value.trim();
+//     var thoughtInputEl = document.getElementById("thought-input").value.trim();
   
-    var newThought = {username: usernameInputEl, title: titleInputEl, thought: thoughtInputEl}
-    saveToStorage(newThought)
+//     var newThought = {username: usernameInputEl, title: titleInputEl, thought: thoughtInputEl}
+//     saveToStorage(newThought)
 
-    window.location.href = "blog.html";
-    formEl.reset();
-}
+//     window.location.href = "blog.html";
+//     formEl.reset();
+// }
+
+// function saveToStorage(newItem){
+//     console.log("Saving to storage: ", newItem)
+//     var myStorage = JSON.parse(localStorage.getItem("saved-thoughts"))
+//     myStorage.push(newItem);
+//     localStorage.setItem("saved-thoughts", JSON.stringify(myStorage))
+// }
+
+// function initiateLocalStorageIfNotThere(){
+//     var myStorage = JSON.parse(localStorage.getItem("saved-thoughts"))
+//     console.log(myStorage)
+//     if(myStorage != null){
+//         return
+//     } 
+//     localStorage.setItem("saved-thoughts", JSON.stringify([]))
+// }
+
+// var formEl = document.getElementById("thought-form");
+// formEl.addEventListener("submit", handleThoughtFormSubmit);
+// console.log(formEl);
+// initiateLocalStorageIfNotThere()
 
 function saveToStorage(newItem){
     console.log("Saving to storage: ", newItem)
@@ -49,5 +70,20 @@ function initiateLocalStorageIfNotThere(){
 var formEl = document.getElementById("thought-form");
 formEl.addEventListener("submit", handleThoughtFormSubmit);
 console.log(formEl);
-initiateLocalStorageIfNotThere()
+initiateLocalStorageIfNotThere();
 
+// local storage
+function handleThoughtFormSubmit(event){
+    event.preventDefault()
+    console.log("FORM SUBMITTED!!!!")
+    var usernameInputEl = document.getElementById("username-input").value.trim();
+    console.log(usernameInputEl)
+    var titleInputEl = document.getElementById("title-input").value.trim();
+    var thoughtInputEl = document.getElementById("thought-input").value.trim();
+  
+    var newThought = {username: usernameInputEl, title: titleInputEl, thought: thoughtInputEl}
+    saveToStorage(newThought)
+
+    window.location.href = "blog.html";
+     formEl.reset();
+}
